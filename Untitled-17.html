@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Encode Sans SC', sans-serif;
+    }
+    body{
+      background: #bbb;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card{
+      background: linear-gradient(145deg, #f0f0f0, #cacaca);
+      box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+      height: 80%;
+      width: 85%;
+      /*border: .1px solid #fff;*/
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      overflow: auto!important;
+    }
+    .thumb{
+      min-width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      padding: .25rem;
+      margin-bottom: 1rem;
+      box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    }
+    .thumb img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .title{
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .row{
+      width: 100%;
+      display: flex;
+      margin-top: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      height: 35px;
+    }
+    .row .col{
+      display: flex;
+      align-items: center;
+    }
+    .col.left{
+      width: 35%;
+      height: 100%;
+      padding-left: 1rem;
+      background: #e0e0e0;
+      box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    }
+    .col.right{
+      width: 65%;
+      height: 100%;
+      background: linear-gradient(145deg, #cacaca, #f0f0f0);
+      box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    }
+    .col input{
+      width: 100%;
+      height: 100%!important;
+      text-align: right;
+      padding: .5rem 1rem;
+      outline: 0;
+      border: 0;
+      background: transparent;
+    }
+    .row.btn{
+      width: 100%;
+      min-height: 35px;
+      justify-content: center;
+      align-items: center;
+      background: blueviolet;
+      margin-top: 2rem!important;
+      color: #fff;
+      box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="thumb">
+      <img src="logo.jfif" alt="Codare">
+    </div>
+    <div class="title">Codare</div>
+    <div class="row">
+      <div class="col left">
+        Name
+      </div>
+      <div class="col right">
+        <input type="text" value="Codare">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col left">
+        Age
+      </div>
+      <div class="col right">
+        <input type="text" value="25 Years">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col left">
+        ID Card
+      </div>
+      <div class="col right">
+        <input type="text" value="AC0001">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col left">
+        Qualified
+      </div>
+      <div class="col right">
+        <input type="text" value="B.Com">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col left">
+        Address
+      </div>
+      <div class="col right">
+        <input type="text" value="Garhwa">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col left">
+        Mobile
+      </div>
+      <div class="col right">
+        <input type="text" value="+91 9631870667">
+      </div>
+    </div>
+    <div class="row btn">
+      Update
+    </div>
+  </div>
+</body>
+</html>
